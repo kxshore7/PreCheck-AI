@@ -1,0 +1,6 @@
+streamlit
+git+https://github.com/openai/whisper.git
+ffmpeg-python
+rapidfuzz
+docx2txt
+pdfminer.six
