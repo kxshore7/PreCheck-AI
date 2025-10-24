@@ -84,12 +84,40 @@ def check_plagiarism(transcript, reference_files):
 
 def fake_sensitive_check(text):
     keywords = [
-        "kill","murder","attack","shoot","gun","knife","bomb","blood","fight","violence","terror",
-        "threat","death","suicide","rape","abuse","hate","racist","caste","religion","slur",
-        "discriminate","insult","drug","cocaine","heroin","weed","alcohol","drink","smoke",
-        "liquor","sex","porn","nude","fuck","shit","bitch","asshole","bastard","dick","pussy",
-        "boobs","cock","screw","whore","slut","வெறுப்பு","கொலை","தாக்குதல்","குண்டு","கத்தி",
-        "இனவெறி","பாலியல்","அவமதிப்பு","மருந்து","குடி","மோசடி","தூண்டுதல்","சாவு","அடிச்சு","சாணம்"
+      # 🔪 Violence / Crime
+        "kill", "murder", "attack", "shoot", "gun", "knife", "bomb", "blood", "fight", "violence",
+        "terror", "threat", "death", "suicide", "rape", "abuse", "stab", "hang", "destroy",
+        "explode", "war", "riot", "beat", "assault", "crime", "loot", "kill yourself",
+
+        # 💢 Hate / Discrimination
+        "hate", "racist", "caste", "religion", "slur", "discriminate", "insult", "color", "black", "white",
+        "slave", "inferior", "superior", "idiot", "stupid", "moron", "fool", "dumb", "nonsense", "ugly",
+        "fat", "pig", "dog", "trash", "garbage", "mad", "psycho", "loser", "worthless",
+
+        # 💊 Drugs / Alcohol
+        "drug", "cocaine", "heroin", "weed", "alcohol", "drink", "smoke", "liquor", "vodka", "beer",
+        "whiskey", "wine", "addict", "marijuana", "ganja", "snort", "joint", "bottle", "hash", "dope",
+
+        # 🔞 Sexual / Obscene Language
+        "sex", "porn", "nude", "fuck", "shit", "bitch", "asshole", "bastard", "dick", "pussy",
+        "cock", "boobs", "tits", "screw", "whore", "slut", "cum", "balls", "penis", "vagina",
+        "naked", "jerk", "suck", "kiss my", "blowjob", "handjob", "doggy", "69", "fucker",
+
+        # 💬 Harassment / Bullying / Threats
+        "kill you", "go to hell", "die", "hate you", "stupid idiot", "bloody", "get lost",
+        "shut up", "bastard face", "ugly pig", "trash face", "fat cow", "cheap", "nonsense", "lazy fool",
+
+        # 🇮🇳 Tamil abusive / slang
+        "வெறுப்பு", "கொலை", "தாக்குதல்", "குண்டு", "கத்தி", "இனவெறி", "பாலியல்", "அவமதிப்பு",
+        "மருந்து", "குடி", "மோசடி", "தூண்டுதல்", "சாவு", "அடிச்சு", "சுத்தி", "சாணம்",
+        "மூதேவி", "மடையன்", "வாயை மூடு", "போடா", "போடீ", "பொண்ணு", "புண்டை", "மூடு",
+        "சொக்கி", "கேவலம்", "கூத்தி", "தர்மம் இல்லாதவன்", "அடிச்சுடுவேன்", "மூக்கை நொறுக்குறேன்",
+
+        # 🇮🇳 Hindi abusive / slang
+        "chutiya", "bhosdike", "madarchod", "behenchod", "gaand", "randi", "haraami", "kutte",
+        "kamina", "kutta", "kaminey", "bakchod", "ullu", "ullu ka pattha", "ghanta", "gaand mara",
+        "saala", "bhen ke laude", "madarchod", "chakka", "chod", "randi ka bacha", "chup kar",
+        "tatti", "ghatiya", "harami", "chirkut", "nalle", "bewakoof", "launda"
     ]
     found = [k for k in keywords if k.lower() in text.lower()]
     return found
@@ -211,3 +239,4 @@ with tab3:
         st.info("No analysis yet. Please run your video in the Upload tab.")
 
 st.caption("© 2025 PreCheck AI | Developed by Kishore | Working Prototype")
+
