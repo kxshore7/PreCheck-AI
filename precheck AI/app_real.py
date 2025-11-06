@@ -96,7 +96,7 @@ def fake_sensitive_check(text):
 
         # 💊 Drugs / Alcohol
         "drugs","drugs", "cocaine", "heroin", "weed", "alcohol", "drink", "smoke", "liquor", "vodka", "beer",
-        "whiskey", "wine", "addict", "marijuana", "ganja", "snort", "joint", "bottle", "hash", "dope",
+        "whiskey", "wine", "addict", "marijuana", "ganja", "snort", "joint", "bottle", 
 
         # 🔞 Sexual / Obscene Language
         "sex", "porn", "nude", "fuck", "shit", "bitch", "asshole", "bastard", "dick", "pussy",
@@ -239,5 +239,6 @@ with tab3:
         st.info("No analysis yet. Please run your video in the Upload tab.")
 
 st.caption("© 2025 PreCheck AI | Developed by Kishore | Working Prototype")
+
 
 
