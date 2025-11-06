@@ -95,7 +95,7 @@ def fake_sensitive_check(text):
         "fat", "pig", "dog", "trash", "garbage", "mad", "psycho", "loser", "worthless",
 
         # 💊 Drugs / Alcohol
-        "drugs","drugs", "cocaine", "heroin", "weed", "alcohol", "drink", "smoke", "liquor", "vodka", "beer",
+        "drugs", "cocaine", "heroin", "weed", "alcohol", "drink", "smoke", "liquor", "vodka", "beer",
         "whiskey", "wine", "addict", "marijuana", "ganja", "snort", "joint", "bottle", 
 
         # 🔞 Sexual / Obscene Language
@@ -111,7 +111,7 @@ def fake_sensitive_check(text):
         "வெறுப்பு", "கொலை", "தாக்குதல்", "குண்டு", "கத்தி", "இனவெறி", "பாலியல்", "அவமதிப்பு",
         "மருந்து", "குடி", "மோசடி", "தூண்டுதல்", "சாவு", "அடிச்சு", "சுத்தி", "சாணம்",
         "மூதேவி", "மடையன்", "வாயை மூடு", "போடா", "போடீ", "பொண்ணு", "புண்டை", "மூடு",
-        "சொக்கி", "கேவலம்", "கூத்தி", "தர்மம் இல்லாதவன்", "அடிச்சுடுவேன்", "மூக்கை நொறுக்குறேன்",
+        "சொக்கி", "கேவலம்", "கூத்தி", "தர்மம் இல்லாதவன்", "அடிச்சுடுவேன்",
 
         # 🇮🇳 Hindi abusive / slang
         "chutiya", "bhosdike", "madarchod", "behenchod", "gaand", "randi", "haraami", "kutte",
@@ -239,6 +239,7 @@ with tab3:
         st.info("No analysis yet. Please run your video in the Upload tab.")
 
 st.caption("© 2025 PreCheck AI | Developed by Kishore | Working Prototype")
+
 
 
 
